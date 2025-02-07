@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+  
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://i.pinimg.com/originals/47/d9/42/47d9421ec296b33a3890ccfa2c8a86e4.png"></div>
+      <div class="swiper-slide"><img src="https://i.pinimg.com/originals/85/df/72/85df72d919c3f5d9e5b4d307a5ad9b78.png"></div>
+      <div class="swiper-slide"><img src="https://i.pinimg.com/originals/00/25/34/002534ef9ef5fa0add852671e6aaf001.jpg"></div>
+      <div class="swiper-slide"><img src="https://m.media-amazon.com/images/I/71Abe5aI5WL._AC_SL1500_.jpg"></div>
+      <div class="swiper-slide"><img src="https://i.pinimg.com/originals/79/e0/86/79e0866b50e6477c1289f082fd865f9d.jpg"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+</body>
+</html>
